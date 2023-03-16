@@ -5,4 +5,8 @@ defmodule DungeonCrawl.Character do
             max_hit_points: 0,
             attack_description: nil,
             damage_range: nil
+
+  defimpl DungeonCrawl.Display do
+    def info(character), do: character.name
+  end
 end

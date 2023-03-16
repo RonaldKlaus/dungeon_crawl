@@ -5,4 +5,8 @@ defmodule DungeonCrawl.Room.Action do
   def forward, do: %Action{id: :forward, label: "Move forward."}
   def rest, do: %Action{id: :forward, label: "Take a better look and rest."}
   def search, do: %Action{id: :forward, label: "Search the room."}
+
+  defimpl DungeonCrawl.Display do
+    def info(action), do: action.label
+  end
 end
