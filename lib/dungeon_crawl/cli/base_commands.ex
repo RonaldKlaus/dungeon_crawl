@@ -45,7 +45,15 @@ defmodule DungeonCrawl.CLI.BaseCommands do
     index = ask_for_index(options)
 
     chosen_option = Enum.at(options, index)
-    chosen_option || (display_invalid_option() && ask_for_option(options))
+
+    case chosen_option do
+      nil ->
+        display_invalid_option()
+        ask_for_option(options)
+
+      _ ->
+        chosen_option
+    end
   end
 
   def display_invalid_option do
