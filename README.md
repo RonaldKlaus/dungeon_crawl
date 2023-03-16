@@ -1,21 +1,12 @@
 # DungeonCrawl
 
-**TODO: Add description**
+**Discription**
+This is a tiny dungeon crawler game. It was created as part of the book `Functional Programming with Elixir`.
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `dungeon_crawl` to your list of dependencies in `mix.exs`:
+Just download the repo and run 
 
 ```elixir
-def deps do
-  [
-    {:dungeon_crawl, "~> 0.1.0"}
-  ]
-end
+mix start
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/dungeon_crawl>.
 
